@@ -1,7 +1,6 @@
 //Jenkinsfile (Declarative Pipeline)
 pipeline {
-//     agent { docker { image 'node:16.13.1-alpine' } }
-    any
+    agent { docker { image 'node:16.13.1-alpine' } }
     stages {
         stage('build') {
             steps {
