@@ -1,9 +1,11 @@
 pipeline {
-    agent { docker {image 'node:16.13.2'} }
+//     agent { docker {image 'node:16.13.2'} }
+    agent none
     stages {
         stage('build') {
             steps {
-                sh 'node --version'
+//                 sh 'node --version'
+                echo 'check echo . . .'
             }
         }
     }
